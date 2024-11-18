@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Danh sách ô tô</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h2>Danh sách ô tô</h2>
+<a href="/">Trang chủ</a>
+<% for(var i=0; i< data.length; i++){ %>
+<div>Mã xe: <%=data.MaXe%></div>
+<div>Tên xe: <%=data.Name%></div>
+<div>Giá: <%=data.Price%></div>
+<div>Năm sản xuất: <%=data.Year%></div>
+<div>Thương hiệu: <%=data.Brand%></div>
+<hr>
+<%}%>
+
+</body>
+</html>
